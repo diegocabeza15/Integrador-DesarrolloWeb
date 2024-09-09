@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Rubik',sans-serif;
+}
+body{
+    background-color: rgb(70, 47, 16);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 1rem;
+    border-radius: .25rem;
+    background-color: rgb(131, 81, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 1rem 1rem 0 .25rem #fac44f ;
+}
+main > h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: beige;
+    text-shadow: rgb(70, 47, 16) 2px 2px 2px;
+    transition: all 150ms ease-in-out;
+    font-family: 'Anton',sans-serif;
+    letter-spacing: .25rem;
+}
+main>form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main>form>button{
+    align-self: center;
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fac44f;
+    color: rgb(70, 47, 16);
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Rubik',sans-serif;
+    border-radius: .25rem;
+    transform: scale(.8);
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+main>form>button:hover{
+    color: white;
+    background-color: rgb(70, 47, 16);
+    transform: scale(1.2);
+    transition: all 150ms ease-in-out;
+}
+
+main form fieldset{
+    display: flex;
+    justify-content: space-between;
+    gap: .25rem;
+}
+
+main form fieldset label{
+flex: 0 0 7rem;
+align-self: center;
+font-size: 1rem;
+text-transform: uppercase;
+font-weight: 700;
+color: snow;
+}
+main>form fieldset input{
+    flex: 1;
+    padding: .25rem ;
+    background-color: transparent;
+    border-bottom: .25rem solid bisque;
+    color: #fac44f;
+    outline: none;
+}
+main>form fieldset input::placeholder{
+    text-transform: uppercase;
+    color: #fac44f;
+    font-weight: 700;
+}
+
+main form fieldset:nth-child(5){
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+main form fieldset:nth-child(5) label{
+flex:none;
+cursor: pointer;
+}
+main form fieldset:nth-child(5) input{
+    flex:1;
+    accent-color: gold;
+    }
+
+    main form fieldset:nth-child(4) button{
+       width: 2rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+       background-color: transparent;
+    }
+    main form fieldset:nth-child(4) button svg{
+        stroke: #fac44f;
+    }
+
+    ::selection{
+        background-color: transparent;
+    }
+    main nav{
+        display: flex;
+        justify-content: center;
+
+        gap: 1rem;
+    }
+    main nav a{
+        text-decoration: none;
+        color: snow;
+        padding: .25rem .75rem;
+        transform: scale(1);
+        transition: all 150ms ease-in-out;
+        border-radius: .25rem;
+    }
+    main nav a:hover{
+        background-color: #fac44f;
+        color:  rgb(70, 47, 16);
+        transform: scale(1.2);
+        transition: all 150ms ease-in-out;
+    }

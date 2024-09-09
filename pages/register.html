@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Machine Coffe | Register</title>
+    <link rel="icon" href="../img/TheBeanMachine.webp">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <main>
+        <h2>Register</h2>
+        <form action="" id="register">
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required minlength="2">
+            </fieldset>
+            <fieldset>
+                <label for="surname">Last Name</label>
+                <input type="text" id="surname" placeholder="Last Name" required minlength="2">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"  minlength="8">
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" required pattern="/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/"  minlength="8">
+                <button type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I accept the terms and conditions</label>
+            </fieldset>
+            <button>Create Account</button>
+        </form>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./login.html">Already Register</a>
+        </nav>
+    </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bean Machine Coffe</title>
+	<link rel="icon" href="./img/TheBeanMachine.webp">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="medias.css">
+</head>
+
+<body>
+	<header id="main-header">
+		<nav id="desktop-menu">
+			<li><a href="pages/login.html">Login</a></li>
+			<li><a href="#about">About Us</a></li>
+			<picture>
+				<img src="./img/TheBeanMachine.webp" alt="logo">
+			</picture>
+			<li><a href="#products">Products</a></li>
+			<li><a href="#Form-job">Contacts</a></li>
+		</nav>
+
+		<nav id="mobile-menu" popover>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#products">Products</a></li>
+			<li><a href="#Form-job">Contacts</a></li>
+			<li><a href="pages/login.html">Login</a></li>
+		</nav>
+
+		<form action="">
+			<picture>
+				<img src="./img/TheBeanMachine.webp" alt="logo">
+			</picture>
+			<button type="button" id="btn-menu-mobile" popovertarget="mobile-menu" popovertargetaction="toggle"><svg
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+					stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-menu">
+					<line x1="3" x2="21" y1="6" y2="6" />
+					<line x1="3" x2="21" y1="12" y2="12" />
+					<line x1="3" x2="21" y1="18" y2="18" />
+				</svg></button>
+		</form>
+	</header>
+
+	<main>
+		<section id="hero">
+			<picture>
+				<img src="/img/TheBeanMachine.webp">
+			</picture>
+			<article>
+				<h1>BEAN MACHINE COFFEE.</h1>
+				<p>"Coffee house chain taking over the world one Tiramisu Gunkaccino at a time."</p>
+			</article>
+		</section>
+
+		<section id="about">
+			<article>
+
+				<h2>About Us</h2>
+				<p>"At Bean Machine, we're passionate about coffee and freedom. Founded in 2010 in the city of Los
+					Santos,
+					our mission is to provide our customers with the best coffee experience while promoting a lifestyle
+					without limits.
+
+					Our roots go back to the streets of Los Santos, where our founder, a coffee enthusiast and speed
+					lover,
+					decided to combine his two passions to create a unique brand. Since then, we've grown rapidly,
+					expanding
+					across the city and becoming a symbol of Los Santos culture.
+
+					At Bean Machine, we believe in quality, innovation, and freedom. Our expert baristas are committed
+					to
+					excellence, and our development team works tirelessly to create new and exciting experiences for our
+					customers.
+
+					Whether you're looking for a coffee to go on your next drive, or a place to relax and enjoy a moment
+					of
+					tranquility, Bean Machine is your destination. Visit us today and experience the freedom of coffee!"
+				</p>
+			</article>
+		</section>
+
+		<section id="cards-sec">
+			<article><!-- Titulos -->
+				<h2>Benefits</h2>
+				<p>¡Here, you can find some of our available benefits!</p>
+				<ul>
+					<li>
+						<picture>
+							<img src="./img/Delivery.jpeg" alt="">
+						</picture>
+						<h2>24-hour delivery</h2>
+						<p>Just by being registered, you get free shipping on thousands of products</p>
+					</li>
+					<li>
+						<picture>
+							<img src="./img/Security.jpeg" alt="">
+						</picture>
+						<h2>Total Protection</h2>
+						<p>Don't like it? Send it back! At Bean Machine Coffee, there's nothing you can't do, because
+							you're always protected.</p>
+					</li>
+					<li>
+						<picture>
+							<img src="./img/PayPal.jpeg" alt="">
+						</picture>
+						<h2>Choose how to pay it</h2>
+						<p>You can pay with a credit card, debit card, cash, or in installments without a card.</p>
+					</li>
+				</ul>
+			</article>
+		</section>
+		<section id="products">
+			<h2>Available Products</h2>
+			<aside>
+				<article class="card">
+					<picture>
+						<img src="./img/Card-economic.jpeg" alt="Avatar" />
+					</picture>
+					<ul class="container">
+						<li>
+							<h4>Card Economic</h4>
+						</li>
+						<li>
+							<p>$14.99 USD</p>
+							<a href="pages/login.html">Login</a>
+						</li>
+					</ul>
+				</article>
+
+				<article class="card">
+					<picture>
+						<img src="./img/Card-Gold.jpeg" alt="Avatar" />
+					</picture>
+					<ul class="container">
+						<li>
+							<h4>Card Gold</h4>
+						</li>
+						<li>
+							<p>$24.99 USD</p>
+							<a href="pages/login.html">Login</a>
+						</li>
+					</ul>
+				</article>
+				<article class="card">
+					<picture>
+						<img src="./img/Card-platinum.jpeg" alt="Avatar" />
+					</picture>
+					<ul class="container">
+						<li>
+							<h4>Card Platinum</h4>
+						</li>
+						<li>
+							<p>$49.99 USD</p>
+							<a href="pages/login.html">Login</a>
+						</li>
+					</ul>
+				</article>
+			</aside>
+		</section>
+
+		<section id="Form-job">
+			<form action="https://example.com/submit" method="post">
+				<h2>Job Application Form</h2>
+				<fieldset class="fieldset-job infoform">
+					<input class="input-form" type="text" name="Name" id="Name" required placeholder="Name">
+					<input class="input-form" type="text" name="Last Name" id="Last Name" required
+						placeholder="Last Name">
+				</fieldset>
+				<fieldset class="fieldset-job infoform">
+					<input class="input-form" type="number" name="Age" id="Age" required placeholder="Age">
+					<input class="input-form" type="Email" name="Email" id="Email" required
+						placeholder="example@gmail.com">
+				</fieldset>
+				<fieldset class="fieldset-job third">
+					<select id="Country" name="Country" required>
+						<option>Select your country</option>
+						<option value="Argentina">Argentina</option>
+						<option value="Chile">Chile</option>
+						<option value="Uruguay">Uruguay</option>
+						<option value="Paraguay">Paraguay</option>
+						<option value="Bolivia">Bolivia</option>
+						<option value="Peru">Perú</option>
+						<option value="Brasil">Brasil</option>
+						<option value="Ecuador">Ecuador</option>
+					</select>
+					<textarea name="Texto" id="textarea-job" placeholder="Escribe tu propuesta" required>
+					</textarea>
+				</fieldset>
+				<fieldset class="fieldset-job">
+					<input type="checkbox" id="Confirm" required>
+					<label id="lbl-confirm" for="Confirm">I accept the terms and conditions</label>
+				</fieldset>
+				<fieldset class="fieldset-job buttonsform">
+					<button class="btms-form" type="submit">Send</button>
+					<button class="btms-form" type="reset">Rewrite</button>
+				</fieldset>
+			</form>
+		</section>
+
+		<section id="txt-condition">
+			<article>
+				<p>
+					"By submitting this form, I declare that I have read and accept the Privacy Policy of Bean Machine
+					Coffee, which sets out how my personal data is collected, used and protected. I understand that my
+					data will be used solely for the purpose of processing my job application and that it may be shared
+					with Bean Machine Coffee's service providers to facilitate the selection process. I also accept that
+					my personal data will be stored in Bean Machine Coffee's database for the necessary period of time
+					for the selection process."
+				</p>
+			</article>
+		</section>
+
+		<section id="contacto">
+			<aside>
+				<h2>Contact us</h2>
+				<ul class="contacto-info">
+					<li>
+						<span>Phone:</span>
+						<span>(0348) 1234567</span>
+					</li>
+					<li>
+						<span>Email:</span>
+						<span>BeanMachine@gmail.com</span>
+					</li>
+					<li>
+						<span>Adress:</span>
+						<span>Strangeways Drive Avenue 123</span>
+					</li>
+				</ul>
+			</aside>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512005.3221279485!2d-124.59891937387948!3d37.160067708000796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1725372777819!5m2!1ses-419!2sar"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</section>
+	</main>
+
+	<footer id="main-footer">
+		<p>&copy;Bean Machine Coffe | Diego Cabeza | 2024 </p>
+		<nav>
+			<a href="#about">👤 About Us</a>
+			<a href="#products">☕ Products</a>
+			<a href="#Form-job">📱 Contact</a>
+		</nav>
+	</footer>
+</body>
+
+
+</body>
+
+</html>
